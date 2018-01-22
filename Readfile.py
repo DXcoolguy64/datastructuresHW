@@ -1,10 +1,19 @@
-#File Program
+#Kerwin Rounds Jr.
+#Read and Write file program
 
 
-counter = 0
+kFile = input("What is the name of the file? ")
 
-infile = open ("HelloWorld.py",'r')
+rFile = open(file, "r")
 
-for lines in infile.readlines():
-    print(counter, lines)
-    counter = counter + 1
+wFile = open("Knuckles.txt","w")
+
+Count = 0
+
+
+for sentence in rFile:
+    Count = Count + 1
+    List = str(Count) + " " + sentence
+    kFile.close()
+    wFile.close()
+ 
