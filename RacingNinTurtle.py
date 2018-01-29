@@ -32,6 +32,7 @@ class RacingTurtle:
 
 Mikey = RacingTurtle(0,0,"Mikey")
 Donny = RacingTurtle(15,0.5,"Donny")
+MasterSplinter = RacingTurtle(40,0,"Master Splinter")
 
     def turnRight(degrees)
 
@@ -62,4 +63,16 @@ while True:
 
     if Mikey.turt.x > 100: #fix
         print(Mikey.name, "Wins Cowabunga")
-        
+
+def runRace(rt):
+    startTime = time.clock()
+
+
+    rt.forward(100,rt)
+
+
+def runForward(dist, rt):
+    turnlag = 100 * (1 - rt.speed/100)
+
+    for i in range (turnlag):
+        rt.forward()

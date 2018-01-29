@@ -4,7 +4,7 @@
 
 kFile = input("What is the name of the file? ")
 
-rFile = open(file, "r")
+rFile = open(kFile, "r")
 
 wFile = open("Knuckles.txt","w")
 
